@@ -108,6 +108,7 @@ contract SocialNetwork {
             for(uint i = 0; i < numberOfUniqueUser[_ind]; i++){
                 if( likes[_ind].uniqueUser[i] == msg.sender){
                     isUnique = false;
+                    break;
                 }
             }
 
