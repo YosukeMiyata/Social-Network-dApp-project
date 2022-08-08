@@ -46,7 +46,7 @@ const App = () => {
             id: comment.id,
             address: comment.poster,
             comment: comment.comment,
-            timestamp: new Date(comment.timestamp * 1000),
+            timestamp: new Date(Date.UTC(comment.timestamp * 1000)),
             totallikes: comment.totallikes
           };
         });
@@ -75,7 +75,7 @@ const App = () => {
           id: id,
           address: from,
           comment: comment,
-          timestamp: new Date(timestamp * 1000),
+          timestamp: new Date(Date.UTC(timestamp * 1000)),
           totallikes: totallikes
           
         },
